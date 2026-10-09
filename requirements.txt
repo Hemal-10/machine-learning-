@@ -1,0 +1,12 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch
+torchvision
+torchaudio
+transformers
+scikit-learn
+pandas
+numpy
+pytest
+streamlit
+datasets
+tqdm

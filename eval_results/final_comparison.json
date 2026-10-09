@@ -1,0 +1,78 @@
+{
+    "models": {
+        "bert": {
+            "fp32_metrics": {
+                "accuracy": 0.91768,
+                "precision": 0.9178264224229515,
+                "recall": 0.91768,
+                "f1_score": 0.9176727873458302
+            },
+            "int8_metrics": {
+                "accuracy": 0.91596,
+                "precision": 0.9163757761950774,
+                "recall": 0.91596,
+                "f1_score": 0.9159390150157086
+            },
+            "profiling": {
+                "original_size_mb": 417.7230167388916,
+                "quantized_size_mb": 173.08681774139404,
+                "size_reduction_pct": 58.56421341283515,
+                "original_inference_ms": 19.32394504547119,
+                "quantized_inference_ms": 20.874810218811035,
+                "speed_improvement_pct": -8.025613660619001
+            }
+        },
+        "roberta": {
+            "fp32_metrics": {
+                "accuracy": 0.93284,
+                "precision": 0.9328998690129248,
+                "recall": 0.93284,
+                "f1_score": 0.9328376779030109
+            },
+            "int8_metrics": {
+                "accuracy": 0.92932,
+                "precision": 0.929978027365643,
+                "recall": 0.92932,
+                "f1_score": 0.9292929479344048
+            },
+            "profiling": {
+                "original_size_mb": 475.5679874420166,
+                "quantized_size_mb": 230.93239879608154,
+                "size_reduction_pct": 51.440718279163434,
+                "original_inference_ms": 19.62714195251465,
+                "quantized_inference_ms": 18.160009384155273,
+                "speed_improvement_pct": 7.475018889193919
+            }
+        },
+        "distilbert": {
+            "fp32_metrics": {
+                "accuracy": 0.90772,
+                "precision": 0.9084078738672497,
+                "recall": 0.90772,
+                "f1_score": 0.9076811272553258
+            },
+            "int8_metrics": {
+                "accuracy": 0.89792,
+                "precision": 0.9005663166963694,
+                "recall": 0.89792,
+                "f1_score": 0.897751124776091
+            },
+            "profiling": {
+                "original_size_mb": 255.45147132873535,
+                "quantized_size_mb": 132.28868293762207,
+                "size_reduction_pct": 48.21377138698002,
+                "original_inference_ms": 10.71939468383789,
+                "quantized_inference_ms": 7.5508832931518555,
+                "speed_improvement_pct": 29.558678303573814
+            }
+        }
+    },
+    "ensemble": {
+        "metrics": {
+            "accuracy": 0.93196,
+            "precision": 0.9319978471585905,
+            "recall": 0.93196,
+            "f1_score": 0.9319585097280635
+        }
+    }
+}

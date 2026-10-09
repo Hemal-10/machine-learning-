@@ -1,0 +1,69 @@
+# ─── Python ───────────────────────────────────────────────
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+
+# ─── Env / Secrets ────────────────────────────────────────
+.env
+.env.*
+*.env
+
+# ─── Jupyter ──────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── PyTest / Coverage ────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ─── Large Model Weights (too big for GitHub w/o LFS) ────
+# Saved FP32 model weights
+saved_models/*/model.safetensors
+
+# Quantized model weights
+saved_models_quantized/*/pytorch_model.bin
+
+# ─── Large Data Files ─────────────────────────────────────
+# Raw CSV datasets (~32 MB each) — download separately
+data/*.csv
+data/*.tsv
+data/*.parquet
+
+# ─── Large Eval Artefacts ─────────────────────────────────
+# PyTorch tensor dumps (logits) can be hundreds of MB
+eval_results/*.pt
+
+# Prediction JSON dumps for full dataset
+eval_results/*_preds_None.json
+eval_results/*_None.json
+eval_results/true_targets_None.json
+
+# Large probability / prediction CSVs
+eval_results/bert_probabilities.csv
+eval_results/ensemble_predictions.csv
+
+# ─── Log & Temp Files ─────────────────────────────────────
+*.log
+err.log
+test.log
+output.txt
+tmp_out.txt
+cleaning_output.txt
+
+# ─── OS / Editor Artefacts ────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
